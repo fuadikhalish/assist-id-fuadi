@@ -42,8 +42,11 @@ function submitData() {
   let url = ''
   let method = ''
   if($('#id').val()){
-    url = "https://61601920faa03600179fb8d2.mockapi.io/pegawai/" + $('#id').val();
+    let id = $('#id').val()
+    url = " https://61601920faa03600179fb8d2.mockapi.io/pegawai/" + id;
+    console.log(url)
     method = "PUT";
+    
   } else {
     url = "https://61601920faa03600179fb8d2.mockapi.io/pegawai";
     method = "POST";
